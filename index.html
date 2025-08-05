@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Activity Tracker</title>
+    <style>
+        body { font-family: Arial; margin: 30px; }
+        input, select, button {
+            margin: 5px 0; padding: 8px; width: 300px;
+        }
+        form { max-width: 400px; margin: auto; }
+    </style>
+</head>
+<body>
+    <h2>Student Activity Entry</h2>
+    <form action="/submit" method="post">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br>
+
+        <label>Roll No:</label><br>
+        <input type="text" name="roll" required><br>
+
+        <label>Activity:</label><br>
+        <input type="text" name="activity" required><br>
+
+        <label>Activity Type:</label><br>
+        <select name="activity_type" required>
+            <option value="Co-curricular">Co-curricular</option>
+            <option value="Extra-curricular">Extra-curricular</option>
+        </select><br>
+
+        <label>Level:</label><br>
+        <select name="level" required>
+            <option value="College">College</option>
+            <option value="District">District</option>
+            <option value="State">State</option>
+            <option value="National">National</option>
+        </select><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
